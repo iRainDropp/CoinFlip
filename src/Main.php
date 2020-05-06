@@ -15,7 +15,7 @@ use pocketmine\utils\TextFormat;
 class Main extends PluginBase
 {
     public function onEnable(): void{
-        $this->getLogger()->info(TextFormat::GREEN . 'has successfully enabled.');
+        $this->getLogger()->info(TextFormat::GREEN . "has successfully enabled.");
     }
 
     public function onDisable(): void{
