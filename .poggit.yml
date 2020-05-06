@@ -4,4 +4,5 @@ branches:
 projects:
   CoinFlip:
     path: ""
+    icon: essentialstp.png
 ...
