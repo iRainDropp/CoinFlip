@@ -8,5 +8,8 @@ selected the amount and clicked the "Submit." button the plugin will automatical
 # Required
 EconomyAPI is required for this plugin to load.
 
+
+# 
+
 This is my first plugin I've made so please do not freak out if you find errors or bugs, just simply leave an issue in this Git and
 I will fix it as soon as I can.
