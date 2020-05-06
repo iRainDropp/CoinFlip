@@ -43,10 +43,10 @@ class Main extends PluginBase
                         if ($amount != 0) {
                             if (EconomyAPI::getInstance()->myMoney($Player) >= $amount) {
                                 $chance = mt_rand(0, 100);
-                                $form1 = new CustomForm(TextFormat::GREEN . TextFormat::BOLD . 'WINNER', [new Label('Response', TextFormat::GREEN . 'You won $' . $amount * 2 . ' in a coin flip.')], function (Player $Player, CustomFormResponse $response) use ($amount): void {
+                                $form1 = new CustomForm(TextFormat::GREEN . TextFormat::BOLD . 'WINNER', [new Label('Response', TextFormat::GREEN . 'You won $' . $amount * 2 . ' in a coin flip.')], function (Player $Player) use ($amount): void {
                                     $Player->sendMessage(TextFormat::GREEN . "You won!\n + $" . $amount * 2);
                                 });
-                                $form2 = new CustomForm(TextFormat::RED . TextFormat::BOLD . 'LOOSER', [new Label('Response', TextFormat::RED . 'You lost $' . $amount . ' in a coin flip.')], function (Player $Player, CustomFormResponse $response) use ($amount): void {
+                                $form2 = new CustomForm(TextFormat::RED . TextFormat::BOLD . 'LOOSER', [new Label('Response', TextFormat::RED . 'You lost $' . $amount . ' in a coin flip.')], function (Player $Player) use ($amount): void {
                                     $Player->sendMessage(TextFormat::RED . "You Lost!\n - $" . $amount);
                                 });
                                 if ($chance <= 50) {
