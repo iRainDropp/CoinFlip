@@ -8,4 +8,4 @@ api: [3.0.0, 4.0.0]
 commands:
   coinflip:
     description: Flip a coin
-    usage: "/coinflip"
+    usage: '/coinflip'
