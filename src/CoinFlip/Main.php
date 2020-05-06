@@ -12,7 +12,7 @@ use pocketmine\Player;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat;
 
-class Main extends PluginBase
+class CoinFlip extends PluginBase
 {
     public function onEnable(): void{
         $this->getLogger()->info(TextFormat::GREEN . 'has successfully enabled.');
