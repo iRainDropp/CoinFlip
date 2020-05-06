@@ -1,0 +1,11 @@
+name: CoinFlip
+version: 1.0.0
+author: iRainDrop
+description: Literal trash
+main: CoinFlip\Main
+api: [3.0.0, 4.0.0]
+
+commands:
+  coinflip:
+    description: Flip a coin
+    usage: "/coinflip"
