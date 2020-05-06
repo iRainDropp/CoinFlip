@@ -1,8 +1,7 @@
 --- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/iPoopFloop/CoinFlip
-build-by-default: true
 branches:
 - master
 projects:
   CoinFlip:
-    path: "src"
+    path: ""
 ...
